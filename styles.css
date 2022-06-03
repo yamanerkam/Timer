@@ -1,0 +1,23 @@
+:root {
+    --color: #0300b1;
+    --color2: #bd0573;
+  }
+  
+  body {
+    font-family: system-ui;
+    color: white;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(
+    to bottom,
+    var(--color) 10%,
+    var(--color2) 80%
+    );
+    overflow: hidden;
+  }
+  
+  div {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+  }
