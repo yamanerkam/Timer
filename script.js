@@ -20,9 +20,10 @@ start.addEventListener("click",(e)=>{
         control=false
      }
     if(secondInput2>60){
-        var plusMinute=Math.floor(secondInput2/60)
+         var plusMinute=Math.floor(secondInput2/60)
         var plusSecond=secondInput2%60
         console.log(plusSecond)
+        console.log(plusMinute)
         minuteInput2= parseInt(minuteInput2) + parseInt(plusMinute)
         secondInput2=plusSecond
     }
