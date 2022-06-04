@@ -19,6 +19,13 @@ start.addEventListener("click",(e)=>{
     if(secondInput2==0 && minuteInput2==0){
         control=false
      }
+    if(secondInput2>60){
+        var plusMinute=Math.round(secondInput2/60)
+        var plusSecond=secondInput2%60
+        console.log(plusSecond)
+        minuteInput2= parseInt(minuteInput2) + parseInt(plusMinute)
+        secondInput2=plusSecond
+    }
 
 var myTimer =setInterval(function() {
     if(secondInput2==0 && minuteInput2==0){
